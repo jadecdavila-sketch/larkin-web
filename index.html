@@ -6,12 +6,26 @@
   <title>Larkin — Operational Calm for Modern Life</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky-nav" id="stickyNav">
+    <div class="nav-container">
+      <img src="larkin_logo.png" alt="Larkin" class="nav-logo">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#your-day">Your Day</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#waitlist">Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="logo">
       <img src="larkin_logo.png" alt="Larkin Logo" class="logo-img">
     </div>
@@ -29,7 +43,7 @@
   </header>
 
   <!-- Value Proposition -->
-  <section class="value-prop">
+  <section class="value-prop" id="about">
     <div class="container">
       <h2>Your Personal COO for Home and Life</h2>
       <p class="subtitle">Calm, intelligent AI orchestration for the modern parent.</p>
@@ -38,7 +52,7 @@
   </section>
 
   <!-- A Day with Larkin -->
-  <section class="day-with-larkin">
+  <section class="day-with-larkin" id="your-day">
     <div class="container">
       <h2>A Day with Larkin</h2>
       <p class="section-intro">Larkin anticipates what matters, lightens the mental load, and helps life run beautifully—so you actually have space for what keeps getting pushed to "someday": that figure drawing class, the writing project gathering dust, slow mornings by the pond with the kids, creative work that lights you up, walks in the woods that aren't errands in disguise.</p>
@@ -79,6 +93,408 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Recipe Collection -->
+  <section class="recipes" id="recipes">
+
+    <!-- Bridge Intro -->
+    <div class="recipe-bridge">
+      <div class="container">
+        <h2>Cooking, the Way It's Meant to Be</h2>
+        <p class="recipe-bridge-text">Not another recipe app. Not another meal kit. These are recipes written with the same care Larkin brings to everything — nourishing, unhurried, and designed for real life.</p>
+      </div>
+    </div>
+
+    <!-- Recipe Carousel -->
+    <div class="recipe-carousel-wrapper">
+      <p class="recipe-carousel-intro">Fifty recipes in Larkin's collection. Here are three.</p>
+
+      <!-- Cover Flow Stage -->
+      <div class="carousel-stage">
+        <div class="carousel-track">
+
+          <!-- Card 1: Wild Mushroom Risotto (LEFT) -->
+          <article class="carousel-card carousel-prev" tabindex="0" role="button" aria-label="Wild Mushroom Risotto — click to view">
+            <div class="carousel-card-preview">
+              <img src="images/recipes/wild-mushroom-risotto.jpg" alt="Wild Mushroom Risotto" class="carousel-card-image" loading="lazy">
+              <div class="carousel-card-body">
+                <div class="recipe-meta-bar">
+                  <span class="recipe-time">45 minutes</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-servings">Serves 4</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-tag">Vegetarian</span>
+                </div>
+                <h3 class="carousel-card-title">Wild Mushroom Risotto</h3>
+                <p class="carousel-card-teaser">Cooking as meditation — the mushrooms bring earthy depth, grounding the creaminess of the rice.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Pan-Seared Salmon (CENTER / ACTIVE) -->
+          <article class="carousel-card carousel-active" tabindex="0" role="button" aria-label="Pan-Seared Salmon with Brown Butter and Asparagus">
+            <div class="carousel-card-preview">
+              <img src="images/recipes/pan-seared-salmon-with-brown-butter-and-asparagus.jpg" alt="Pan-Seared Salmon with Brown Butter and Asparagus" class="carousel-card-image">
+              <div class="carousel-card-body">
+                <div class="recipe-meta-bar">
+                  <span class="recipe-time">25 minutes</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-servings">Serves 4</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-tag">Gluten-Free</span>
+                </div>
+                <h3 class="carousel-card-title">Pan-Seared Salmon with Brown Butter and Asparagus</h3>
+                <p class="carousel-card-teaser">Elegant enough for guests, simple enough for a weeknight. The brown butter transforms something ordinary into something worth slowing down for.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Pork Chops (RIGHT) -->
+          <article class="carousel-card carousel-next" tabindex="0" role="button" aria-label="Pan-Seared Pork Chops with Apple and Sage — click to view">
+            <div class="carousel-card-preview">
+              <img src="images/recipes/pan-seared-pork-chops-with-apple-and-sage.jpg" alt="Pan-Seared Pork Chops with Apple and Sage" class="carousel-card-image" loading="lazy">
+              <div class="carousel-card-body">
+                <div class="recipe-meta-bar">
+                  <span class="recipe-time">30 minutes</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-servings">Serves 4</span>
+                  <span class="recipe-meta-divider"></span>
+                  <span class="recipe-tag">Gluten-Free</span>
+                </div>
+                <h3 class="carousel-card-title">Pan-Seared Pork Chops with Apple and Sage</h3>
+                <p class="carousel-card-teaser">Autumn on a plate — apples, sage, and a pan sauce that comes together in minutes.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Expanded Recipe Content (shown for active card) -->
+      <div class="carousel-detail" id="carouselDetail">
+
+        <!-- Detail: Risotto -->
+        <div class="carousel-detail-panel" data-recipe="0">
+          <div class="container">
+            <p class="recipe-featured-intro">Risotto on a weeknight isn't as ambitious as it sounds. Yes, it requires attention — stirring, adding broth slowly — but that's part of its appeal. <strong>This is cooking as meditation.</strong> The mushrooms here bring an earthy depth, almost meaty, grounding the creaminess of the rice. This is the kind of meal that asks you to slow down, and rewards you for it.</p>
+
+            <div class="recipe-body">
+              <div class="recipe-ingredients">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>6 cups vegetable broth (keep warm in a pot)</li>
+                  <li>3 tablespoons olive oil, divided</li>
+                  <li>1 lb mixed mushrooms (cremini, shiitake, oyster), sliced</li>
+                  <li>1 small onion, finely diced</li>
+                  <li>3 cloves garlic, minced</li>
+                  <li>1&frac12; cups Arborio rice</li>
+                  <li>&frac12; cup dry white wine</li>
+                  <li>3 tablespoons unsalted butter</li>
+                  <li>&frac12; cup grated Parmesan cheese</li>
+                  <li>2 tablespoons fresh thyme leaves</li>
+                  <li>Salt and pepper to taste</li>
+                  <li>Fresh parsley for serving</li>
+                </ul>
+              </div>
+
+              <div class="recipe-instructions">
+                <h4>Instructions</h4>
+                <ol>
+                  <li>
+                    <strong>Cook the Mushrooms</strong>
+                    <p>Heat 2 tablespoons olive oil in a large, wide pan over medium-high heat. Add the mushrooms in a single layer (work in batches if needed). Let them cook undisturbed for 3-4 minutes until golden brown on one side, then stir and cook another 2-3 minutes. Season with salt and pepper, then transfer to a bowl.</p>
+                  </li>
+                  <li>
+                    <strong>Toast the Rice</strong>
+                    <p>In the same pan, add the remaining tablespoon of olive oil. Add the onion and cook until soft, about 5 minutes. Add the garlic and cook for 1 minute. Add the Arborio rice and stir to coat in the oil. Let it toast for 2 minutes until the edges become slightly translucent. This step builds flavor — don't skip it.</p>
+                  </li>
+                  <li>
+                    <strong>Build the Risotto</strong>
+                    <p>Pour in the white wine and stir until it's mostly absorbed. Now begin adding the warm broth, one ladleful at a time. Stir frequently and wait until each addition is mostly absorbed before adding the next.</p>
+                    <p class="recipe-mindfulness-inline">This process takes about 25-30 minutes. You'll find a rhythm here — stir, wait, add, stir. Let your mind settle into it.</p>
+                  </li>
+                  <li>
+                    <strong>Finish and Serve</strong>
+                    <p>When the rice is tender but still has a slight bite, remove from heat. Stir in the butter, Parmesan, thyme, and the cooked mushrooms. The risotto should flow on the plate, not sit in a mound. Divide among shallow bowls. Finish with fresh parsley and extra Parmesan.</p>
+                    <p class="recipe-mindfulness-inline">This is comfort — earthy, creamy, deeply satisfying.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="larkin-notes">
+              <h4>Larkin's Notes</h4>
+              <div class="larkin-note-section">
+                <h5>On Thyme</h5>
+                <p>Thyme's botanical name, <em>Thymus</em>, comes from the Greek word for courage. Ancient Romans bathed in thyme water before battle. Today, it's known for supporting respiratory health and bringing calm. In this risotto, it adds a subtle earthiness that complements the mushrooms beautifully.</p>
+              </div>
+              <div class="larkin-note-section">
+                <h5>On Mindful Cooking</h5>
+                <p class="recipe-mindfulness">Risotto is one of cooking's great meditations. The stirring, the waiting, the slow transformation of rice into something creamy and luxurious — this is presence in motion. Let yourself settle into the rhythm. There's nowhere to rush to.</p>
+              </div>
+              <div class="larkin-note-section">
+                <h5>Make It Your Own</h5>
+                <ul class="make-it-yours">
+                  <li><strong>Add protein:</strong> Stir in cooked chicken, shrimp, or crumbled sausage at the end</li>
+                  <li><strong>Make it lighter:</strong> Use half the butter and Parmesan</li>
+                  <li><strong>Add greens:</strong> Stir in arugula or spinach just before serving</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="recipe-nutrition">
+              <div class="nutrition-item">
+                <span class="nutrition-value">420</span>
+                <span class="nutrition-label">Calories</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">12g</span>
+                <span class="nutrition-label">Protein</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">58g</span>
+                <span class="nutrition-label">Carbs</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">16g</span>
+                <span class="nutrition-label">Fat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail: Salmon -->
+        <div class="carousel-detail-panel active" data-recipe="1">
+          <div class="container">
+            <p class="recipe-featured-intro">Salmon on a Tuesday — elegant enough for guests, simple enough for a weeknight. <strong>The kind of meal that makes you feel like you have your life together, even if the rest of the day suggests otherwise.</strong> The brown butter here is key: it's nutty, rich, and transforms something ordinary into something worth slowing down for.</p>
+
+            <div class="recipe-body">
+              <div class="recipe-ingredients">
+                <h4>Ingredients</h4>
+
+                <p class="ingredient-group-label">For the salmon</p>
+                <ul>
+                  <li>4 salmon fillets (6 oz each), skin-on</li>
+                  <li>1 tablespoon olive oil</li>
+                  <li>Salt and pepper</li>
+                </ul>
+
+                <p class="ingredient-group-label">For the brown butter</p>
+                <ul>
+                  <li>4 tablespoons unsalted butter</li>
+                  <li>2 cloves garlic, minced</li>
+                  <li>1 tablespoon fresh lemon juice</li>
+                  <li>1 tablespoon capers, drained</li>
+                  <li>2 tablespoons fresh parsley, chopped</li>
+                </ul>
+
+                <p class="ingredient-group-label">For the asparagus</p>
+                <ul>
+                  <li>1 lb asparagus, trimmed</li>
+                  <li>1 tablespoon olive oil</li>
+                  <li>Salt and pepper</li>
+                </ul>
+              </div>
+
+              <div class="recipe-instructions">
+                <h4>Instructions</h4>
+                <ol>
+                  <li>
+                    <strong>Roast the Asparagus</strong>
+                    <p>Preheat oven to 425&deg;F. Toss asparagus with olive oil, salt, and pepper on a baking sheet. Roast for 12-15 minutes until tender and slightly charred.</p>
+                  </li>
+                  <li>
+                    <strong>Sear the Salmon</strong>
+                    <p>While the asparagus roasts, pat the salmon fillets dry and season with salt and pepper on both sides. Heat olive oil in a large skillet over medium-high heat. Place salmon skin-side down and press gently with a spatula for 30 seconds to ensure even contact. Cook undisturbed for 4-5 minutes until the skin is crispy.</p>
+                    <p>Flip carefully and cook for another 2-3 minutes. The salmon should be opaque on the outside but still slightly translucent in the center. Remove to a plate and tent with foil.</p>
+                  </li>
+                  <li>
+                    <strong>Make the Brown Butter</strong>
+                    <p>In the same skillet (no need to wipe it clean), melt the butter over medium heat. Let it foam and cook, swirling occasionally, until it turns golden brown and smells nutty — about 3-4 minutes.</p>
+                    <p>Add the garlic and cook for 30 seconds. Remove from heat and stir in lemon juice, capers, and parsley.</p>
+                  </li>
+                  <li>
+                    <strong>Serve</strong>
+                    <p>Place the salmon on plates alongside the asparagus. Spoon the brown butter generously over the fish.</p>
+                    <p class="recipe-mindfulness-inline">Take a breath. This is nourishment made visible.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="larkin-notes">
+              <h4>Larkin's Notes</h4>
+
+              <div class="larkin-note-section">
+                <h5>On Brown Butter</h5>
+                <p>Brown butter is one of cooking's small miracles — ordinary butter transformed by heat into something deeply nutty and rich. The French call it <em>beurre noisette</em> (hazelnut butter) for its toasted, almost sweet flavor. It's worth the few extra minutes.</p>
+              </div>
+
+              <div class="larkin-note-section">
+                <h5>On Mindful Cooking</h5>
+                <p class="recipe-mindfulness">As the butter browns, stay present. Watch it shift from yellow to golden to amber. This is cooking as attention — not rushing, just noticing.</p>
+              </div>
+
+              <div class="larkin-note-section">
+                <h5>Make It Your Own</h5>
+                <ul class="make-it-yours">
+                  <li><strong>Swap the fish:</strong> Try halibut, cod, or arctic char — same method, different protein</li>
+                  <li><strong>Add greens:</strong> Serve over wilted spinach or arugula for something that feels more complete</li>
+                  <li><strong>Make it lighter:</strong> Skip the brown butter and use lemon and herbs only (still delicious, just simpler)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="recipe-nutrition">
+              <div class="nutrition-item">
+                <span class="nutrition-value">420</span>
+                <span class="nutrition-label">Calories</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">35g</span>
+                <span class="nutrition-label">Protein</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">6g</span>
+                <span class="nutrition-label">Carbs</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">28g</span>
+                <span class="nutrition-label">Fat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail: Pork Chops -->
+        <div class="carousel-detail-panel" data-recipe="2">
+          <div class="container">
+            <p class="recipe-featured-intro">Pork chops with apples and sage — it's a classic pairing for a reason. The sweetness of the apples balances the richness of the pork, and the sage brings everything together with its earthy, slightly peppery warmth. <strong>This is autumn on a plate</strong>, but it works year-round when you need something comforting and quick.</p>
+
+            <div class="recipe-body">
+              <div class="recipe-ingredients">
+                <h4>Ingredients</h4>
+
+                <p class="ingredient-group-label">For the pork</p>
+                <ul>
+                  <li>4 bone-in pork chops (1 inch thick)</li>
+                  <li>1 tablespoon olive oil</li>
+                  <li>1 teaspoon salt</li>
+                  <li>&frac12; teaspoon black pepper</li>
+                  <li>1 teaspoon garlic powder</li>
+                </ul>
+
+                <p class="ingredient-group-label">For the apples</p>
+                <ul>
+                  <li>2 tablespoons butter</li>
+                  <li>2 medium apples (Honeycrisp or Granny Smith), cored and sliced</li>
+                  <li>8-10 fresh sage leaves</li>
+                  <li>2 tablespoons apple cider vinegar</li>
+                  <li>2 tablespoons honey or maple syrup</li>
+                  <li>Pinch of salt</li>
+                </ul>
+              </div>
+
+              <div class="recipe-instructions">
+                <h4>Instructions</h4>
+                <ol>
+                  <li>
+                    <strong>Sear the Pork Chops</strong>
+                    <p>Pat the pork chops dry and season both sides generously with salt, pepper, and garlic powder. Heat olive oil in a large skillet over medium-high heat. Cook undisturbed for 4-5 minutes until deeply golden on the bottom. Flip and cook another 4-5 minutes until the internal temperature reaches 145&deg;F. Transfer to a plate and tent with foil to rest.</p>
+                  </li>
+                  <li>
+                    <strong>Cook the Apples and Sage</strong>
+                    <p>In the same skillet (don't wipe it out — those browned bits are flavor), reduce heat to medium and add the butter. Once melted, add the apple slices in a single layer. Cook for 3-4 minutes on one side until golden, then flip and cook another 2-3 minutes.</p>
+                    <p>Add the sage leaves and let them crisp in the butter for 30 seconds. The sage will become fragrant and slightly darker.</p>
+                  </li>
+                  <li>
+                    <strong>Make the Pan Sauce</strong>
+                    <p>Add the apple cider vinegar, honey, and a pinch of salt. Stir to combine, scraping up any browned bits from the bottom of the pan. Let it bubble for 1-2 minutes until slightly thickened.</p>
+                  </li>
+                  <li>
+                    <strong>Serve</strong>
+                    <p>Return the pork chops to the skillet along with any resting juices. Spoon the apples and sauce over the top. Serve immediately.</p>
+                    <p class="recipe-mindfulness-inline">This is dinner — sweet, savory, grounding.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="larkin-notes">
+              <h4>Larkin's Notes</h4>
+              <div class="larkin-note-section">
+                <h5>On Sage</h5>
+                <p>Sage's Latin name, <em>Salvia</em>, means "to save" or "to heal." It's been used for centuries to support digestion, memory, and clarity. When fried in butter, sage becomes crispy and intensely aromatic — one of cooking's small pleasures. This is the kind of ingredient that transforms a dish from good to memorable.</p>
+              </div>
+              <div class="larkin-note-section">
+                <h5>On Mindful Cooking</h5>
+                <p class="recipe-mindfulness">As you slice the apples, notice their color — some green, some red, some mottled with both. As they cook, watch them soften and caramelize. This is where attention becomes nourishment.</p>
+              </div>
+              <div class="larkin-note-section">
+                <h5>Make It Your Own</h5>
+                <ul class="make-it-yours">
+                  <li><strong>Swap the protein:</strong> Use chicken thighs or turkey cutlets</li>
+                  <li><strong>Add depth:</strong> Use balsamic vinegar instead of apple cider vinegar</li>
+                  <li><strong>Serve with:</strong> Mashed potatoes, roasted brussels sprouts, or a simple green salad</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="recipe-nutrition">
+              <div class="nutrition-item">
+                <span class="nutrition-value">380</span>
+                <span class="nutrition-label">Calories</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">34g</span>
+                <span class="nutrition-label">Protein</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">22g</span>
+                <span class="nutrition-label">Carbs</span>
+              </div>
+              <div class="nutrition-item">
+                <span class="nutrition-value">18g</span>
+                <span class="nutrition-label">Fat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Instacart Integration -->
+    <div class="instacart-callout">
+      <div class="container">
+        <h2>From Plan to Pantry, Handled</h2>
+        <p class="instacart-text">Pick your meals for the week. Larkin builds the shopping list, combines the ingredients across recipes, and sends it straight to Instacart — 85,000+ stores, delivery or pickup. No wandering the aisles wondering what you forgot.</p>
+        <div class="instacart-flow">
+          <div class="flow-step">
+            <span class="flow-number">1</span>
+            <span class="flow-label">Choose meals</span>
+          </div>
+          <span class="flow-arrow">&rarr;</span>
+          <div class="flow-step">
+            <span class="flow-number">2</span>
+            <span class="flow-label">Larkin builds the list</span>
+          </div>
+          <span class="flow-arrow">&rarr;</span>
+          <div class="flow-step">
+            <span class="flow-number">3</span>
+            <span class="flow-label">Cart fills itself</span>
+          </div>
+          <span class="flow-arrow">&rarr;</span>
+          <div class="flow-step">
+            <span class="flow-number">4</span>
+            <span class="flow-label">Delivered to your door</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- Privacy Section -->
@@ -155,8 +571,10 @@
   <footer class="footer">
     <div class="container">
       <img src="larkin_logo.png" alt="Larkin" class="footer-logo">
-      <p>&copy; 2024 Larkin. All rights reserved.</p>
+      <p>&copy; 2025 Larkin. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="recipes.js"></script>
 </body>
 </html>

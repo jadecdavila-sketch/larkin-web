@@ -25,13 +25,74 @@ body {
   font-weight: 400;
 }
 
+/* Typography Upgrade — Cormorant Garamond for headings */
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* Logo */
+/* ======================== */
+/* STICKY NAVIGATION        */
+/* ======================== */
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #3A2A28;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sticky-nav.visible {
+  transform: translateY(0);
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 32px;
+  width: auto;
+  opacity: 0.9;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #F5F1EA;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* ======================== */
+/* LOGO                     */
+/* ======================== */
+
 .logo {
   display: flex;
   justify-content: center;
@@ -39,11 +100,14 @@ body {
 }
 
 .logo-img {
-  height: 180px;
+  height: 260px;
   width: auto;
 }
 
-/* Hero Section */
+/* ======================== */
+/* HERO SECTION             */
+/* ======================== */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -100,7 +164,10 @@ body {
   margin-top: 20px;
 }
 
-/* Value Proposition */
+/* ======================== */
+/* VALUE PROPOSITION        */
+/* ======================== */
+
 .value-prop {
   background-color: #516C61;
   color: #F5F1EA;
@@ -110,7 +177,7 @@ body {
 
 .value-prop h2 {
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.3rem;
   margin-bottom: 20px;
 }
@@ -128,7 +195,10 @@ body {
   margin: 0 auto;
 }
 
-/* A Day with Larkin */
+/* ======================== */
+/* A DAY WITH LARKIN        */
+/* ======================== */
+
 .day-with-larkin {
   padding: 100px 24px;
 }
@@ -136,7 +206,7 @@ body {
 .day-with-larkin h2 {
   text-align: center;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   color: #3A2A28;
   margin-bottom: 30px;
@@ -200,7 +270,510 @@ body {
   margin-top: 16px;
 }
 
-/* Privacy Section */
+/* ======================== */
+/* RECIPE SECTION           */
+/* ======================== */
+
+/* Bridge Intro */
+.recipe-bridge {
+  padding: 120px 24px 60px;
+  text-align: center;
+}
+
+.recipe-bridge::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #D8B466;
+  margin: 0 auto 60px;
+}
+
+.recipe-bridge h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #3A2A28;
+  letter-spacing: 0.1rem;
+  margin-bottom: 24px;
+}
+
+.recipe-bridge-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #3A2A28;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ======================== */
+/* RECIPE CAROUSEL          */
+/* ======================== */
+
+.recipe-carousel-wrapper {
+  padding-bottom: 80px;
+}
+
+.recipe-carousel-intro {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #8C8C5A;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* Stacked Card Carousel */
+.carousel-stage {
+  padding: 0 100px;
+  margin-bottom: 0;
+}
+
+.carousel-track {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-card {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s ease,
+              box-shadow 0.5s ease,
+              background-color 0.5s ease;
+}
+
+.carousel-card:focus-visible {
+  outline: 2px solid #516C61;
+  outline-offset: 4px;
+}
+
+.carousel-card.carousel-active {
+  z-index: 10;
+  opacity: 1;
+  transform: none;
+  background-color: #F5F1EA;
+  box-shadow: 0 8px 32px rgba(58, 42, 40, 0.12);
+  cursor: default;
+}
+
+.carousel-card.carousel-prev {
+  z-index: 5;
+  opacity: 0.85;
+  transform: translateX(-160px) translateY(12px);
+}
+
+.carousel-card.carousel-next {
+  z-index: 5;
+  opacity: 0.85;
+  transform: translateX(160px) translateY(12px);
+}
+
+.carousel-card.carousel-prev:hover {
+  opacity: 0.95;
+  transform: translateX(-175px) translateY(12px);
+}
+
+.carousel-card.carousel-next:hover {
+  opacity: 0.95;
+  transform: translateX(175px) translateY(12px);
+}
+
+/* Further cards (2+ positions from active) */
+.carousel-card[data-offset="2"] {
+  z-index: 3;
+  opacity: 0.55;
+}
+
+.carousel-card.carousel-prev[data-offset="2"] {
+  transform: translateX(-220px) translateY(20px);
+}
+
+.carousel-card.carousel-next[data-offset="2"] {
+  transform: translateX(220px) translateY(20px);
+}
+
+.carousel-card[data-offset="2"]:hover {
+  opacity: 0.7;
+}
+
+.carousel-card.carousel-prev[data-offset="2"]:hover {
+  transform: translateX(-235px) translateY(20px);
+}
+
+.carousel-card.carousel-next[data-offset="2"]:hover {
+  transform: translateX(235px) translateY(20px);
+}
+
+.carousel-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-card-body {
+  padding: 20px 24px;
+}
+
+.carousel-card-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3A2A28;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.carousel-card.carousel-active .carousel-card-title {
+  font-size: 1.5rem;
+}
+
+.carousel-card-teaser {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #3A2A28;
+}
+
+/* Expanded Detail Panel */
+.carousel-detail {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-detail-panel {
+  display: none;
+  padding-top: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(140, 140, 90, 0.08);
+}
+
+.carousel-detail-panel.active {
+  display: block;
+}
+
+/* Shared recipe content styles */
+.recipe-meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.recipe-time,
+.recipe-servings {
+  font-size: 0.85rem;
+  color: #8C8C5A;
+  font-weight: 400;
+}
+
+.recipe-meta-divider {
+  width: 4px;
+  height: 4px;
+  background-color: #8C8C5A;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.recipe-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  color: #516C61;
+  background-color: rgba(81, 108, 97, 0.1);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.recipe-featured-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3A2A28;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.recipe-featured-intro {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #3A2A28;
+  margin-bottom: 40px;
+}
+
+.recipe-featured-intro strong {
+  color: #516C61;
+}
+
+/* Recipe Body — Ingredients + Instructions */
+.recipe-body {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.recipe-ingredients h4,
+.recipe-instructions h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #516C61;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(140, 140, 90, 0.2);
+}
+
+.ingredient-group-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #8C8C5A;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.ingredient-group-label:first-of-type {
+  margin-top: 0;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-ingredients li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(140, 140, 90, 0.08);
+  color: #3A2A28;
+}
+
+.recipe-ingredients li:last-child {
+  border-bottom: none;
+}
+
+.recipe-instructions ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+}
+
+.recipe-instructions li {
+  margin-bottom: 28px;
+  counter-increment: step;
+  position: relative;
+  padding-left: 36px;
+}
+
+.recipe-instructions li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: #516C61;
+  color: #F5F1EA;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-instructions li strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #3A2A28;
+  margin-bottom: 8px;
+}
+
+.recipe-instructions li p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3A2A28;
+  margin-bottom: 8px;
+}
+
+.recipe-mindfulness-inline {
+  font-style: italic;
+  color: #8C8C5A;
+}
+
+/* Larkin's Notes */
+.larkin-notes {
+  background-color: rgba(81, 108, 97, 0.06);
+  padding: 40px;
+  margin-bottom: 32px;
+}
+
+.larkin-notes h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3A2A28;
+  margin-bottom: 28px;
+}
+
+.larkin-note-section {
+  margin-bottom: 24px;
+}
+
+.larkin-note-section:last-child {
+  margin-bottom: 0;
+}
+
+.larkin-note-section h5 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #516C61;
+  margin-bottom: 10px;
+}
+
+.larkin-note-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3A2A28;
+}
+
+.recipe-mindfulness {
+  font-style: italic;
+  color: #8C8C5A;
+}
+
+.make-it-yours {
+  list-style: none;
+  padding: 0;
+}
+
+.make-it-yours li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding: 6px 0;
+  color: #3A2A28;
+}
+
+.make-it-yours li strong {
+  color: #516C61;
+}
+
+/* Nutrition Bar */
+.recipe-nutrition {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 28px 0;
+  border-top: 1px solid rgba(140, 140, 90, 0.15);
+}
+
+.nutrition-item {
+  text-align: center;
+}
+
+.nutrition-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #516C61;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.nutrition-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: #8C8C5A;
+  margin-top: 4px;
+}
+
+
+/* ======================== */
+/* INSTACART CALLOUT        */
+/* ======================== */
+
+.instacart-callout {
+  background-color: #516C61;
+  color: #F5F1EA;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.instacart-callout h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+.instacart-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 48px;
+  opacity: 0.95;
+}
+
+.instacart-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.flow-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #D8B466;
+  color: #D8B466;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.flow-label {
+  font-size: 0.85rem;
+  font-weight: 400;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.flow-arrow {
+  color: #D8B466;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+/* ======================== */
+/* PRIVACY SECTION          */
+/* ======================== */
+
 .privacy {
   background-color: #3A2A28;
   color: #F5F1EA;
@@ -210,7 +783,7 @@ body {
 .privacy h2 {
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
@@ -250,7 +823,10 @@ body {
   color: #D8B466;
 }
 
-/* Benefits Section */
+/* ======================== */
+/* BENEFITS SECTION         */
+/* ======================== */
+
 .benefits {
   padding: 100px 24px;
 }
@@ -258,7 +834,7 @@ body {
 .benefits h2 {
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   color: #3A2A28;
   margin-bottom: 60px;
@@ -289,7 +865,10 @@ body {
   line-height: 1.8;
 }
 
-/* Differentiator */
+/* ======================== */
+/* DIFFERENTIATOR           */
+/* ======================== */
+
 .differentiator {
   padding: 80px 24px;
   text-align: center;
@@ -314,7 +893,10 @@ body {
   line-height: 1.8;
 }
 
-/* CTA Section */
+/* ======================== */
+/* CTA SECTION              */
+/* ======================== */
+
 .cta {
   padding: 100px 24px;
   text-align: center;
@@ -378,7 +960,10 @@ body {
   background-color: #F0C2B4;
 }
 
-/* Footer */
+/* ======================== */
+/* FOOTER                   */
+/* ======================== */
+
 .footer {
   padding: 60px 24px;
   text-align: center;
@@ -398,7 +983,17 @@ body {
   opacity: 0.7;
 }
 
-/* Responsive */
+/* ======================== */
+/* RESPONSIVE               */
+/* ======================== */
+
+@media (max-width: 1024px) {
+  .recipe-body {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
@@ -408,10 +1003,6 @@ body {
   .hero-tagline {
     font-size: 1rem;
     letter-spacing: 0.1rem;
-  }
-
-  .nav {
-    padding: 20px 24px;
   }
 
   .logo-img {
@@ -438,5 +1029,109 @@ body {
 
   .waitlist-form input {
     min-width: 100%;
+  }
+
+  /* Sticky Nav Mobile */
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+  }
+
+  /* Recipe Section Mobile */
+  .recipe-bridge h2 {
+    font-size: 1.8rem;
+  }
+
+  .recipe-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .larkin-notes {
+    padding: 28px 24px;
+  }
+
+  .recipe-nutrition {
+    gap: 24px;
+  }
+
+  .nutrition-value {
+    font-size: 1.2rem;
+  }
+
+  /* Carousel Mobile */
+  .carousel-stage {
+    padding: 0 24px;
+  }
+
+  .carousel-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .carousel-card {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    max-width: 400px;
+    opacity: 0.6;
+    transform: none;
+  }
+
+  .carousel-card.carousel-active {
+    opacity: 1;
+    transform: none;
+    order: 0;
+  }
+
+  .carousel-card.carousel-prev,
+  .carousel-card.carousel-prev:hover {
+    transform: none;
+    order: 1;
+  }
+
+  .carousel-card.carousel-next,
+  .carousel-card.carousel-next:hover {
+    transform: none;
+    order: 2;
+  }
+
+  .carousel-card[data-offset="2"],
+  .carousel-card[data-offset="2"]:hover {
+    transform: none;
+  }
+
+  .carousel-detail {
+    max-width: 100%;
+  }
+
+  .carousel-detail-panel {
+    background-color: transparent;
+    border-top: none;
+  }
+
+  /* Instacart Mobile */
+  .instacart-callout h2 {
+    font-size: 1.6rem;
+  }
+
+  .instacart-flow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .flow-step {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin-bottom: 0;
   }
 }
