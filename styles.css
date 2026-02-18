@@ -770,6 +770,28 @@ h2 {
   margin-bottom: 16px;
 }
 
+.powered-by-instacart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 48px;
+}
+
+.powered-by-instacart span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #F5F1EA;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.instacart-logo {
+  height: 28px;
+  width: auto;
+}
+
 /* ======================== */
 /* PRIVACY SECTION          */
 /* ======================== */
