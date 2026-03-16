@@ -213,7 +213,6 @@ h2 {
 }
 
 .section-intro {
-  text-align: center;
   max-width: 700px;
   margin: 0 auto 60px;
   font-size: 1.05rem;
@@ -303,6 +302,7 @@ h2 {
   color: #3A2A28;
   max-width: 650px;
   margin: 0 auto;
+  text-align: left;
 }
 
 /* ======================== */
@@ -726,6 +726,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto 48px;
   opacity: 0.95;
+  text-align: left;
 }
 
 .instacart-flow {
@@ -793,6 +794,129 @@ h2 {
 }
 
 /* ======================== */
+/* DOCUMENT VAULT SECTION   */
+/* ======================== */
+
+.vault {
+  background-color: #F5F1EA;
+  padding: 100px 24px;
+}
+
+.vault h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #3A2A28;
+  margin-bottom: 16px;
+}
+
+.vault-headline {
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #516C61;
+  line-height: 1.6;
+  margin-bottom: 56px;
+}
+
+.vault-prose {
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.vault-prose p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #3A2A28;
+  margin-bottom: 20px;
+}
+
+.vault-prose .vault-accent {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #516C61;
+  margin: 32px 0;
+}
+
+.vault-scenarios {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.vault-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid #D8B466;
+  padding: 32px 36px;
+  border-radius: 2px;
+}
+
+.vault-card:nth-child(1) {
+  border-left-color: #D8B466;
+}
+
+.vault-card:nth-child(2) {
+  border-left-color: #516C61;
+}
+
+.vault-card:nth-child(3) {
+  border-left-color: #F0C2B4;
+}
+
+.vault-prompt {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  color: #516C61;
+  margin-bottom: 12px;
+}
+
+.vault-trigger {
+  font-size: 0.95rem;
+  color: #3A2A28;
+  margin-bottom: 8px;
+}
+
+.vault-response {
+  font-size: 0.95rem;
+  color: #3A2A28;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.vault-note {
+  font-size: 0.9rem;
+  color: #3A2A28;
+  opacity: 0.75;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.vault-privacy {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px;
+  border-top: 1px solid rgba(58, 42, 40, 0.12);
+}
+
+.vault-privacy p:first-child {
+  font-size: 1rem;
+  color: #3A2A28;
+  margin-bottom: 8px;
+}
+
+.vault-privacy p:last-child {
+  font-size: 0.95rem;
+  color: #3A2A28;
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+/* ======================== */
 /* PRIVACY SECTION          */
 /* ======================== */
 
@@ -811,7 +935,6 @@ h2 {
 }
 
 .privacy-intro {
-  text-align: center;
   font-size: 1.1rem;
   margin-bottom: 50px;
   opacity: 0.95;
@@ -1135,6 +1258,19 @@ h2 {
   .carousel-detail-panel {
     background-color: transparent;
     border-top: none;
+  }
+
+  /* Vault Mobile */
+  .vault {
+    padding: 72px 24px;
+  }
+
+  .vault-headline {
+    font-size: 1.15rem;
+  }
+
+  .vault-card {
+    padding: 24px;
   }
 
   /* Instacart Mobile */
