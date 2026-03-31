@@ -1,0 +1,155 @@
+/* ======================== */
+/* LEGAL PAGES              */
+/* ======================== */
+
+.legal-nav {
+  background-color: #3A2A28;
+  padding: 20px 0;
+}
+
+.legal-nav-home {
+  display: inline-block;
+}
+
+.legal-page {
+  padding: 80px 24px 100px;
+}
+
+.legal-page .container {
+  max-width: 740px;
+}
+
+.legal-page h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #3A2A28;
+  letter-spacing: 0.1rem;
+  margin-bottom: 12px;
+}
+
+.legal-meta {
+  font-size: 0.85rem;
+  color: #8C8C5A;
+  margin-bottom: 48px;
+  letter-spacing: 0.02rem;
+}
+
+.legal-page h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3A2A28;
+  margin-top: 56px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(140, 140, 90, 0.2);
+}
+
+.legal-page h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #516C61;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.legal-page p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3A2A28;
+  margin-bottom: 16px;
+}
+
+.legal-page ul,
+.legal-page ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.legal-page li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3A2A28;
+  margin-bottom: 6px;
+}
+
+.legal-page a {
+  color: #516C61;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-page a:hover {
+  color: #3A2A28;
+}
+
+.legal-page strong {
+  font-weight: 500;
+}
+
+.legal-page code {
+  font-size: 0.85em;
+  background-color: rgba(140, 140, 90, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Tables */
+.legal-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.legal-page table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.legal-page th {
+  text-align: left;
+  font-weight: 500;
+  color: #516C61;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 12px 16px;
+  border-bottom: 2px solid rgba(140, 140, 90, 0.2);
+}
+
+.legal-page td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(140, 140, 90, 0.08);
+  color: #3A2A28;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.legal-page tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 60px 24px 80px;
+  }
+
+  .legal-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .legal-page h2 {
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+
+  .legal-page table {
+    font-size: 0.82rem;
+  }
+
+  .legal-page th,
+  .legal-page td {
+    padding: 10px 12px;
+  }
+}

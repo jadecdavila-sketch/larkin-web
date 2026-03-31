@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Larkin</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+
+  <nav class="legal-nav">
+    <div class="container">
+      <a href="index.html" class="legal-nav-home">
+        <img src="larkin_logo.png" alt="Larkin" class="nav-logo">
+      </a>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="legal-meta">Effective Date: March 31, 2026 &middot; Last Updated: March 31, 2026</p>
+
+      <p>Larkin ("we," "our," or "us") is a family calendar assistant that helps parents manage schedules by intelligently parsing emails and calendar events. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>1a. Account Information</h3>
+      <p>When you sign up with <strong>Google</strong> or <strong>Apple</strong>, we receive:</p>
+      <ul>
+        <li><strong>Email address</strong> and <strong>display name</strong> from your Google or Apple account</li>
+        <li><strong>Profile photo URL</strong> (if available; Google only — Apple may provide a private relay email)</li>
+        <li><strong>Device timezone</strong> (detected automatically, updated on each app open)</li>
+      </ul>
+      <p>If you use <strong>Sign in with Apple</strong>, Apple may provide a private relay email address. We use whichever email Apple provides for your account identification.</p>
+
+      <h3>1b. Family Information (Optional)</h3>
+      <p>During onboarding, you may provide:</p>
+      <ul>
+        <li><strong>Child names</strong> and <strong>age or grade level</strong> (e.g., "3rd grade")</li>
+        <li><strong>School names</strong></li>
+      </ul>
+      <p>This information is used solely to help Larkin identify which family member an email event pertains to. We do not collect children's dates of birth, email addresses, or photos. See Section 8 (Children's Privacy) for more detail.</p>
+
+      <h3>1c. Email Data (Gmail — Read-Only Access)</h3>
+      <p>With your permission, Larkin accesses your Gmail inbox in <strong>read-only</strong> mode to identify family-related events (school notices, sports schedules, appointments, etc.).</p>
+      <p><strong>What we store:</strong></p>
+      <ul>
+        <li>Email <strong>metadata</strong> only: sender address, subject line, date received, and the domain the email came from</li>
+        <li><strong>Parsed event details</strong>: event title, date, time, location, and which family member it relates to</li>
+      </ul>
+      <p><strong>What we never store:</strong></p>
+      <ul>
+        <li>Email bodies — full email content is processed in memory and immediately discarded</li>
+        <li>Attachments</li>
+        <li>Emails unrelated to family scheduling (filtered out during processing)</li>
+      </ul>
+
+      <h3>1d. Calendar Data (Google Calendar — Read &amp; Write Access)</h3>
+      <p>With your permission, Larkin accesses your Google Calendar to:</p>
+      <ul>
+        <li><strong>Read</strong> your existing events and display them alongside parsed email events in a unified family schedule</li>
+        <li><strong>Create</strong> new calendar events when Larkin detects scheduling information in your emails (e.g., school events, sports practices, medical appointments)</li>
+      </ul>
+      <p>Larkin uses smart routing to decide which parsed events belong on your Google Calendar (school, sports, medical, social) versus which stay as internal Larkin reminders (bills, gifts, meal prep). You can customize these routing preferences.</p>
+
+      <h3>1e. Document Vault Data (Google Drive)</h3>
+      <p>With your permission, Larkin accesses your Google Drive using the <strong><code>drive.file</code></strong> scope to:</p>
+      <ul>
+        <li><strong>Store</strong> scanned documents (report cards, medical records, school forms) in a dedicated Larkin folder within your Google Drive</li>
+        <li><strong>Read</strong> documents that Larkin has previously stored</li>
+      </ul>
+      <p>Larkin only accesses files it has created — it cannot read or modify other files in your Google Drive. Documents are processed to extract metadata (document type, dates, related family member) for organization purposes.</p>
+
+      <h3>1f. Notification Preferences</h3>
+      <ul>
+        <li>Push notification settings (enabled/disabled per notification type)</li>
+        <li>Quiet hours / blackout times you configure</li>
+        <li>Your device's push notification token (FCM token) for delivering notifications</li>
+      </ul>
+
+      <h3>1g. Device Permissions</h3>
+      <p>Larkin may request access to the following device capabilities:</p>
+      <div class="legal-table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Purpose</th><th>When Requested</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Camera</strong></td><td>Scan physical documents (report cards, forms) for the Document Vault</td><td>When you tap "Scan Document"</td></tr>
+            <tr><td><strong>Photo Library</strong></td><td>Import existing photos of documents into the Document Vault</td><td>When you tap "Import from Photos"</td></tr>
+            <tr><td><strong>Microphone</strong></td><td>Voice-to-text for submitting feedback during beta testing</td><td>When you tap the voice feedback button</td></tr>
+            <tr><td><strong>Speech Recognition</strong></td><td>Transcribe spoken feedback into text</td><td>When you use voice feedback</td></tr>
+            <tr><td><strong>Notifications</strong></td><td>Deliver morning briefings, event reminders, and schedule updates</td><td>During onboarding or settings</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>All device permissions are optional. You can deny any permission and still use Larkin's core features. You can revoke permissions at any time in your device's Settings app.</p>
+
+      <h3>1h. Device &amp; Diagnostic Information</h3>
+      <ul>
+        <li><strong>Device timezone</strong> (IANA format, e.g., "America/Los_Angeles")</li>
+        <li><strong>Device model and OS version</strong> — collected only when you submit feedback, to help us reproduce and fix issues</li>
+        <li><strong>Crash reports</strong> — collected automatically via Firebase Crashlytics, including stack traces, device model, OS version, and app state at the time of crash (see Section 9)</li>
+      </ul>
+      <p>We do <strong>not</strong> collect persistent device IDs, advertising identifiers, IP addresses, or hardware serial numbers.</p>
+
+      <h3>1i. Shopping List Data (Instacart Integration)</h3>
+      <p>If you use the meal planning feature's Instacart integration, Larkin sends your <strong>shopping list items</strong> (ingredient names and quantities) to Instacart via their Developer Platform API to enable grocery ordering. No other personal data is shared with Instacart.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <div class="legal-table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Purpose</th><th>Data Used</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Parse emails into calendar events</td><td>Email metadata, email content (in-memory only), family context</td></tr>
+            <tr><td>Create Google Calendar events from parsed emails</td><td>Parsed event details (title, date, time, location)</td></tr>
+            <tr><td>Display your unified family schedule</td><td>Parsed events, Google Calendar events</td></tr>
+            <tr><td>Send push notifications</td><td>FCM token, notification preferences, timezone, event data</td></tr>
+            <tr><td>Personalize event parsing</td><td>Family information (names, grades, schools)</td></tr>
+            <tr><td>Detect schedule changes and alert you</td><td>Email metadata, event history</td></tr>
+            <tr><td>Weather-aware notifications</td><td>Timezone / general location</td></tr>
+            <tr><td>Store and organize family documents</td><td>Scanned/imported documents, Google Drive access</td></tr>
+            <tr><td>Sync shopping lists for meal planning</td><td>Ingredient names and quantities (sent to Instacart)</td></tr>
+            <tr><td>Diagnose app crashes and improve stability</td><td>Crash reports, device model, OS version</td></tr>
+            <tr><td>Process user feedback (beta)</td><td>Feedback text, screenshots, device info</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do <strong>not</strong> use your data for advertising, profiling, or sale to third parties.</p>
+
+      <h2>3. Third-Party Services</h2>
+      <p>Larkin uses the following third-party services to operate:</p>
+      <div class="legal-table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Firebase Authentication</strong></td><td>Account sign-in (Google &amp; Apple)</td><td>Google/Apple account credentials (managed by respective provider)</td></tr>
+            <tr><td><strong>Firebase Cloud Firestore</strong></td><td>Database</td><td>All stored data listed in Section 1</td></tr>
+            <tr><td><strong>Firebase Cloud Messaging</strong></td><td>Push notifications</td><td>FCM token, notification content</td></tr>
+            <tr><td><strong>Firebase Cloud Functions</strong></td><td>Backend processing</td><td>Email metadata, event data</td></tr>
+            <tr><td><strong>Firebase Crashlytics</strong></td><td>Crash reporting &amp; diagnostics</td><td>Crash logs, stack traces, device model, OS version, app state</td></tr>
+            <tr><td><strong>Firebase Storage</strong></td><td>Feedback screenshot storage</td><td>Screenshots submitted with user feedback</td></tr>
+            <tr><td><strong>Google Gmail API</strong></td><td>Read emails</td><td>OAuth tokens (encrypted, server-side only)</td></tr>
+            <tr><td><strong>Google Calendar API</strong></td><td>Read existing events; create events from parsed emails</td><td>OAuth tokens (encrypted, server-side only)</td></tr>
+            <tr><td><strong>Google Drive API</strong></td><td>Store and retrieve Document Vault files</td><td>OAuth tokens (encrypted, server-side only); documents stored in user's own Drive</td></tr>
+            <tr><td><strong>Google Gemini AI</strong></td><td>Parse emails into structured events; generate suggestions</td><td>Email subject, sender, sanitized email content (see Section 4)</td></tr>
+            <tr><td><strong>Apple Sign-In</strong></td><td>Account authentication (iOS)</td><td>Apple-provided identity token and email</td></tr>
+            <tr><td><strong>OpenWeatherMap</strong></td><td>Weather forecasts for notifications</td><td>Timezone-derived general location only</td></tr>
+            <tr><td><strong>Instacart Developer Platform</strong></td><td>Grocery shopping list sync</td><td>Shopping list items (ingredient names, quantities)</td></tr>
+            <tr><td><strong>Notion API</strong></td><td>Internal feedback management (beta only)</td><td>User feedback text, categorization, and screenshots</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>No data is shared with advertisers, data brokers, or any parties beyond those listed above.</p>
+
+      <h2>4. Email Processing &amp; Security</h2>
+      <p>Larkin processes your emails through a multi-layer security pipeline:</p>
+      <ol>
+        <li><strong>Sanitization</strong> — Before any AI processing, emails are scanned and cleaned: sensitive data patterns (SSNs, credit card numbers, passwords, API keys) are automatically redacted, protected health information (PHI) is detected and flagged, content is truncated to prevent abuse, and email spoofing is detected.</li>
+        <li><strong>AI Parsing</strong> — Sanitized email content is sent to Google Gemini AI to extract event details (what, when, where, who). The AI returns structured event data only.</li>
+        <li><strong>Validation</strong> — AI output is validated for correct structure and checked for any sensitive data leakage before storage.</li>
+        <li><strong>Storage</strong> — Only the extracted event metadata is stored. The original email body is never written to our database.</li>
+      </ol>
+      <p>Your Google OAuth tokens (used to access Gmail, Calendar, and Drive) are <strong>encrypted at rest</strong> and stored server-side only. They are never exposed to the client app or any third party.</p>
+
+      <h2>5. Data Retention</h2>
+      <div class="legal-table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Data Type</th><th>Retention Period</th><th>Deletion Method</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Account &amp; profile</td><td>Until you delete your account</td><td>Account deletion</td></tr>
+            <tr><td>Family information</td><td>Until you delete your account</td><td>Account deletion</td></tr>
+            <tr><td>Parsed events</td><td>Until you delete your account</td><td>Account deletion</td></tr>
+            <tr><td>Email metadata</td><td><strong>90 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
+            <tr><td>Parsing error logs</td><td><strong>30 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
+            <tr><td>Notification history</td><td><strong>90 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
+            <tr><td>OAuth tokens</td><td>Until you disconnect or delete your account</td><td>Account deletion or revocation</td></tr>
+            <tr><td>Notification preferences</td><td>Until you delete your account</td><td>Account deletion</td></tr>
+            <tr><td>Document Vault files</td><td>Until you delete from your Google Drive or delete your account</td><td>Manual deletion or account deletion</td></tr>
+            <tr><td>Crash reports</td><td><strong>90 days</strong></td><td>Automatic (Firebase Crashlytics retention)</td></tr>
+            <tr><td>Feedback data</td><td>Until resolved, then <strong>90 days</strong></td><td>Automatic deletion</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>6. Your Rights &amp; Controls</h2>
+
+      <h3>Export Your Data</h3>
+      <p>You can download a copy of all your personal data at any time from within the app. Your export includes your profile, events, email metadata, notification history, and preferences — delivered as a structured data file.</p>
+
+      <h3>Delete Your Account</h3>
+      <p>You can permanently delete your account and all associated data from within the app. When you delete your account, we remove:</p>
+      <ul>
+        <li>Your user profile and family information</li>
+        <li>All parsed events</li>
+        <li>All email metadata</li>
+        <li>All notification history and preferences</li>
+        <li>All OAuth tokens</li>
+        <li>Your Firebase Authentication record</li>
+        <li>All feedback submissions</li>
+        <li>Document Vault metadata (documents stored in your Google Drive remain under your control)</li>
+      </ul>
+      <p>Deletion is comprehensive and irreversible. Automatically expiring data (email metadata, error logs, notification history) that has not yet reached its TTL is also deleted immediately.</p>
+
+      <h3>Manage Notifications</h3>
+      <p>You can enable or disable specific notification types, set quiet hours, and adjust notification preferences at any time in the app settings.</p>
+
+      <h3>Revoke Google Access</h3>
+      <p>You can disconnect Gmail, Google Calendar, and/or Google Drive access at any time through the app or through your Google Account permissions. Revoking access stops all email, calendar, and document processing immediately. Any events already created on your Google Calendar will remain (Google Calendar is your data), but no new events will be added.</p>
+
+      <h2>7. Data Security</h2>
+      <ul>
+        <li>All data is transmitted over <strong>HTTPS/TLS</strong></li>
+        <li>Data is stored in <strong>Firebase Cloud Firestore</strong> with encryption at rest</li>
+        <li>OAuth tokens are <strong>encrypted</strong> and stored server-side only</li>
+        <li><strong>Firebase App Check</strong> is enforced to prevent unauthorized API access</li>
+        <li><strong>Firestore Security Rules</strong> restrict data access — users can only read and modify their own data</li>
+        <li>Server-side fields (tokens, subscription status, sync timestamps) cannot be modified by the client app</li>
+        <li>Children's names are encrypted in storage</li>
+        <li>Document Vault files are stored in the user's own Google Drive, protected by Google's security infrastructure</li>
+      </ul>
+
+      <h2>8. Children's Privacy (COPPA Compliance)</h2>
+      <p>Larkin is designed for <strong>parents</strong> — not children. Children do not create accounts, sign in, or interact with the app directly. All data is managed under the parent's authenticated account.</p>
+      <p><strong>What we collect about children:</strong></p>
+      <ul>
+        <li>Name and grade level only (provided by the parent during optional onboarding)</li>
+        <li>No date of birth, email address, phone number, photo, or other personal identifiers</li>
+      </ul>
+      <p><strong>How children's data is used:</strong></p>
+      <ul>
+        <li>Solely to help Larkin's AI correctly identify which child an email event is about</li>
+      </ul>
+      <p><strong>How children's data is protected:</strong></p>
+      <ul>
+        <li>Stored under the parent's account, accessible only to the parent</li>
+        <li>Children's names are encrypted at rest</li>
+        <li>Never shared with third parties for any purpose beyond event parsing</li>
+        <li>Completely deleted when the parent deletes their account</li>
+      </ul>
+      <p><strong>Parental controls:</strong></p>
+      <ul>
+        <li>Parents can add, edit, or remove children's information at any time</li>
+        <li>Parents can configure which email domains Larkin processes (whitelist/blacklist)</li>
+        <li>Parents have full control over account deletion and data export</li>
+      </ul>
+      <p>If you believe we have inadvertently collected personal information from a child without parental consent, please contact us immediately at privacy@heylarkin.com.</p>
+
+      <h2>9. Analytics, Diagnostics &amp; Tracking</h2>
+
+      <h3>Crash Reporting (Firebase Crashlytics)</h3>
+      <p>Larkin uses <strong>Firebase Crashlytics</strong> to automatically collect crash reports when the app encounters an error. This includes:</p>
+      <ul>
+        <li>Stack traces and error messages</li>
+        <li>Device model and operating system version</li>
+        <li>App version and build number</li>
+        <li>App state at the time of the crash</li>
+      </ul>
+      <p>Crash data is used solely to identify and fix bugs. It does not include personal data such as your name, email, or family information. Crash data is retained for 90 days.</p>
+
+      <h3>Notification Metrics</h3>
+      <p>We track limited internal metrics to improve notification delivery:</p>
+      <ul>
+        <li>Whether a notification was delivered, opened, or dismissed</li>
+        <li>Aggregate notification engagement rates (used to optimize delivery timing)</li>
+      </ul>
+      <p>These metrics are tied to your account, never shared externally, and deleted automatically after 90 days.</p>
+
+      <h3>No Advertising or Third-Party Analytics</h3>
+      <p>Larkin does <strong>not</strong> use advertising SDKs, tracking pixels, or third-party analytics services (such as Google Analytics, Facebook SDK, or similar). We do not build advertising profiles or share usage data with ad networks.</p>
+
+      <h2>10. California Privacy Rights (CCPA)</h2>
+      <p>If you are a California resident, you have the following additional rights under the California Consumer Privacy Act (CCPA):</p>
+      <ul>
+        <li><strong>Right to Know</strong>: You may request details about the categories and specific pieces of personal information we have collected about you.</li>
+        <li><strong>Right to Delete</strong>: You may request that we delete all personal information we have collected about you.</li>
+        <li><strong>Right to Opt-Out of Sale</strong>: We do <strong>not</strong> sell your personal information to any third party.</li>
+        <li><strong>Right to Non-Discrimination</strong>: We will not discriminate against you for exercising any of your CCPA rights.</li>
+      </ul>
+      <p>To exercise your rights, use the in-app data export and account deletion features, or contact us at privacy@heylarkin.com.</p>
+
+      <h2>11. International Users</h2>
+      <p>Larkin is operated by Larkin AI, LLC, based in the United States. If you access Larkin from outside the United States, please be aware that your data may be transferred to, stored, and processed in the United States, where data protection laws may differ from those in your country.</p>
+
+      <h3>For Users in the European Economic Area (EEA) and United Kingdom</h3>
+      <p>If you are located in the EEA or UK, you have additional rights under the General Data Protection Regulation (GDPR), including:</p>
+      <ul>
+        <li><strong>Right of Access</strong>: Request a copy of your personal data</li>
+        <li><strong>Right to Rectification</strong>: Request correction of inaccurate data</li>
+        <li><strong>Right to Erasure</strong>: Request deletion of your data</li>
+        <li><strong>Right to Restrict Processing</strong>: Request limitation of how we use your data</li>
+        <li><strong>Right to Data Portability</strong>: Request your data in a machine-readable format</li>
+        <li><strong>Right to Object</strong>: Object to processing of your data</li>
+        <li><strong>Right to Withdraw Consent</strong>: Withdraw consent for Gmail, Calendar, or Drive access at any time</li>
+      </ul>
+      <p>Our legal basis for processing your data is your <strong>consent</strong> (provided when you grant OAuth access and agree to this policy) and <strong>legitimate interest</strong> (improving and maintaining the service).</p>
+      <p>To exercise these rights, use the in-app controls or contact us at privacy@heylarkin.com.</p>
+
+      <h2>12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you through the app or by email before the changes take effect. Your continued use of Larkin after changes are posted constitutes acceptance of the updated policy.</p>
+
+      <h2>13. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy, your data, or your rights, contact us at:</p>
+      <p><strong>Email:</strong> privacy@heylarkin.com<br>
+      <strong>Entity:</strong> Larkin AI, LLC</p>
+
+      <h2>14. Google API Services Disclosure</h2>
+      <p>Larkin's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>Specifically:</p>
+      <ul>
+        <li>We only request access to data that is necessary for Larkin's core functionality</li>
+        <li>We do not use Google user data for advertising</li>
+        <li>We do not transfer Google user data to third parties except as necessary to provide the service (as described in Section 3)</li>
+        <li>We do not use Google user data to develop or improve unrelated products</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="larkin_logo.png" alt="Larkin" class="footer-logo">
+      <p>&copy; 2026 Larkin AI, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

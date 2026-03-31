@@ -1128,6 +1128,28 @@ h2 {
   opacity: 0.7;
 }
 
+.footer-legal {
+  margin-bottom: 12px;
+}
+
+.footer-legal a {
+  color: #F5F1EA;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+}
+
+.footer-divider {
+  margin: 0 10px;
+  opacity: 0.4;
+}
+
 /* ======================== */
 /* RESPONSIVE               */
 /* ======================== */
