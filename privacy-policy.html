@@ -26,7 +26,7 @@
   <main class="legal-page">
     <div class="container">
       <h1>Privacy Policy</h1>
-      <p class="legal-meta">Effective Date: March 31, 2026 &middot; Last Updated: March 31, 2026</p>
+      <p class="legal-meta">Effective Date: September 26, 2026 &middot; Last Updated: September 26, 2026 (previous version March 31, 2026)</p>
 
       <p>Larkin ("we," "our," or "us") is a family calendar assistant that helps parents manage schedules by intelligently parsing emails and calendar events. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -46,28 +46,47 @@
       <ul>
         <li><strong>Child names</strong> and <strong>age or grade level</strong> (e.g., "3rd grade")</li>
         <li><strong>School names</strong></li>
+        <li><strong>Birthdays</strong> (a full date, or just a birth year if that's all you give us)</li>
       </ul>
-      <p>This information is used solely to help Larkin identify which family member an email event pertains to. We do not collect children's dates of birth, email addresses, or photos. See Section 8 (Children's Privacy) for more detail.</p>
+      <p>This information is used to help Larkin identify which family member an email event is about, and to remind you ahead of birthdays. Over time Larkin may also learn your family's regular activities and care providers from your calendar and email (for example, "the dentist, about twice a year"). We do not collect children's email addresses, phone numbers, or photos. See Section 8 (Children's Privacy) for more detail.</p>
 
       <h3>1c. Email Data (Gmail — Read-Only Access)</h3>
       <p>With your permission, Larkin accesses your Gmail inbox in <strong>read-only</strong> mode to identify family-related events (school notices, sports schedules, appointments, etc.).</p>
       <p><strong>What we store:</strong></p>
       <ul>
-        <li>Email <strong>metadata</strong> only: sender address, subject line, date received, and the domain the email came from</li>
+        <li>Email <strong>details</strong>: sender address, subject line, date received, and the domain the email came from</li>
+        <li>A <strong>short, cleaned copy of the email's text</strong> (up to about 5,000 characters, with passwords, card numbers and similar sensitive patterns removed), so you can read it in the app. It is deleted automatically after 90 days. Health-related email is different — see below.</li>
+        <li>The <strong>names and types of attachments</strong> (for example, "permission_slip.pdf"), so you can save them to your Document Vault. We don't keep the files themselves.</li>
         <li><strong>Parsed event details</strong>: event title, date, time, location, and which family member it relates to</li>
       </ul>
+      <p><strong>Email waiting to be processed:</strong> Email that isn't urgent waits to be processed together with other email, usually overnight. While it waits, a copy of the full email text is kept in our database for up to 7 days. Once it is sent for processing, that copy is kept for up to 7 more days (so a failed run can be retried). It is then deleted automatically.</p>
       <p><strong>What we never store:</strong></p>
       <ul>
-        <li>Email bodies — full email content is processed in memory and immediately discarded</li>
-        <li>Attachments</li>
+        <li>Attachment files (only their names and types, as above)</li>
         <li>Emails unrelated to family scheduling (filtered out during processing)</li>
       </ul>
+
+      <h3>Health-related email</h3>
+      <p>Some family email comes from health providers — the dentist, the pediatrician, occupational therapy (OT), the pharmacy, the school nurse, and your own doctors too. Larkin reads these emails so it can put the appointment on your calendar and remind you. For these emails, Larkin keeps <strong>only the logistics</strong>:</p>
+      <ul>
+        <li>which family member it's for, and the date and time</li>
+        <li>the location, unless the location itself names a kind of health service (then we leave it out)</li>
+        <li>simple steps, such as "forms due," "bring your insurance card," or "arrive early"</li>
+        <li>a general kind of provider from a short fixed list (dentist, orthodontist, pediatrician, eye doctor, pharmacy, OT, school nurse); every other kind is just "appointment"</li>
+        <li>attachment names and types, as with any email, so you can save them to your Document Vault. These stay in your own Larkin data. They never appear on your calendar or in a notification.</li>
+        <li>a scrambled fingerprint of the sender's web address, used only to spot duplicate reminders. It can't be turned back into the address.</li>
+        <li>the email's ID in your Gmail, so Larkin can open the original in your Gmail. We keep no copy of it.</li>
+      </ul>
+      <p>When an office writes that <strong>test results are available</strong> or asks you to <strong>call the office</strong>, Larkin gives you a short neutral line in your evening recap. It does not keep the result, and it does not add a calendar entry or send a notification for it.</p>
+      <p>For health-related email, Larkin <strong>never stores</strong> diagnoses, test results, medication names, the reason for a visit, the subject line, the sender's display name, or any of the email's text. Calendar entries and notifications use neutral wording (for example, "Appointment"). Calendar entries Larkin creates from health email are marked <strong>private</strong> on your Google Calendar, so people you've shared your calendar with see only "busy." Notifications, briefings and recaps never include the location.</p>
+      <p>To find this information, the full email is still read once by our AI provider (see Section 3) and may wait to be processed as described above. What Larkin keeps afterward is only the list above.</p>
+      <p>Health information about you and your children is covered by our <a href="consumer-health-data-policy.html">Consumer Health Data Privacy Policy</a>, which explains your rights in more detail.</p>
 
       <h3>1d. Calendar Data (Google Calendar — Read &amp; Write Access)</h3>
       <p>With your permission, Larkin accesses your Google Calendar to:</p>
       <ul>
         <li><strong>Read</strong> your existing events and display them alongside parsed email events in a unified family schedule</li>
-        <li><strong>Create</strong> new calendar events when Larkin detects scheduling information in your emails (e.g., school events, sports practices, medical appointments)</li>
+        <li><strong>Create</strong> new calendar events when Larkin detects scheduling information in your emails (e.g., school events, sports practices, medical appointments). Appointments from health-related email use neutral wording and are marked private (see Section 1c).</li>
       </ul>
       <p>Larkin uses smart routing to decide which parsed events belong on your Google Calendar (school, sports, medical, social) versus which stay as internal Larkin reminders (bills, gifts, meal prep). You can customize these routing preferences.</p>
 
@@ -91,7 +110,7 @@
       <div class="legal-table-wrapper">
         <table>
           <thead>
-            <tr><th>Permission</th><th>Purpose</th><th>When Requested</th></tr>
+            <tr><th scope="col">Permission</th><th scope="col">Purpose</th><th scope="col">When Requested</th></tr>
           </thead>
           <tbody>
             <tr><td><strong>Camera</strong></td><td>Scan physical documents (report cards, forms) for the Document Vault</td><td>When you tap "Scan Document"</td></tr>
@@ -119,14 +138,14 @@
       <div class="legal-table-wrapper">
         <table>
           <thead>
-            <tr><th>Purpose</th><th>Data Used</th></tr>
+            <tr><th scope="col">Purpose</th><th scope="col">Data Used</th></tr>
           </thead>
           <tbody>
-            <tr><td>Parse emails into calendar events</td><td>Email metadata, email content (in-memory only), family context</td></tr>
+            <tr><td>Parse emails into calendar events</td><td>Email details, email content (see Section 1c for what is kept), family context</td></tr>
             <tr><td>Create Google Calendar events from parsed emails</td><td>Parsed event details (title, date, time, location)</td></tr>
             <tr><td>Display your unified family schedule</td><td>Parsed events, Google Calendar events</td></tr>
-            <tr><td>Send push notifications</td><td>FCM token, notification preferences, timezone, event data</td></tr>
-            <tr><td>Personalize event parsing</td><td>Family information (names, grades, schools)</td></tr>
+            <tr><td>Send push notifications (morning briefing, evening debrief, weekend preview, etc.)</td><td>FCM token, notification preferences, timezone, event data</td></tr>
+            <tr><td>Personalize event parsing (assign events to correct child/school)</td><td>Family information (names, grades, schools)</td></tr>
             <tr><td>Detect schedule changes and alert you</td><td>Email metadata, event history</td></tr>
             <tr><td>Weather-aware notifications</td><td>Timezone / general location</td></tr>
             <tr><td>Store and organize family documents</td><td>Scanned/imported documents, Google Drive access</td></tr>
@@ -143,19 +162,21 @@
       <div class="legal-table-wrapper">
         <table>
           <thead>
-            <tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr>
+            <tr><th scope="col">Service</th><th scope="col">Purpose</th><th scope="col">Data Shared</th></tr>
           </thead>
           <tbody>
             <tr><td><strong>Firebase Authentication</strong></td><td>Account sign-in (Google &amp; Apple)</td><td>Google/Apple account credentials (managed by respective provider)</td></tr>
             <tr><td><strong>Firebase Cloud Firestore</strong></td><td>Database</td><td>All stored data listed in Section 1</td></tr>
-            <tr><td><strong>Firebase Cloud Messaging</strong></td><td>Push notifications</td><td>FCM token, notification content</td></tr>
+            <tr><td><strong>Firebase Cloud Messaging (FCM)</strong></td><td>Push notifications</td><td>FCM token, notification content</td></tr>
             <tr><td><strong>Firebase Cloud Functions</strong></td><td>Backend processing</td><td>Email metadata, event data</td></tr>
             <tr><td><strong>Firebase Crashlytics</strong></td><td>Crash reporting &amp; diagnostics</td><td>Crash logs, stack traces, device model, OS version, app state</td></tr>
             <tr><td><strong>Firebase Storage</strong></td><td>Feedback screenshot storage</td><td>Screenshots submitted with user feedback</td></tr>
             <tr><td><strong>Google Gmail API</strong></td><td>Read emails</td><td>OAuth tokens (encrypted, server-side only)</td></tr>
             <tr><td><strong>Google Calendar API</strong></td><td>Read existing events; create events from parsed emails</td><td>OAuth tokens (encrypted, server-side only)</td></tr>
             <tr><td><strong>Google Drive API</strong></td><td>Store and retrieve Document Vault files</td><td>OAuth tokens (encrypted, server-side only); documents stored in user's own Drive</td></tr>
-            <tr><td><strong>Google Gemini AI</strong></td><td>Parse emails into structured events; generate suggestions</td><td>Email subject, sender, sanitized email content (see Section 4)</td></tr>
+            <tr><td><strong>Google Gemini AI</strong></td><td>Parse emails into structured events; generate gift suggestions, meal plans, and family narratives</td><td>Email subject, sender, sanitized email content (see Section 4). Used under Google's paid terms, which do not allow Google to train its models on this data. Google may keep requests for a limited time to detect abuse.</td></tr>
+            <tr><td><strong>Anthropic (Claude AI)</strong></td><td>Write the wording of notifications, briefings and recaps</td><td>Event details (title, date, time, who it's for), family first names, and recent notification history. For health-related email, only Larkin's own template words — never the email's subject, sender, or text. Used under Anthropic's commercial terms, which do not allow Anthropic to train its models on this data.</td></tr>
+            <tr><td><strong>ElevenLabs</strong></td><td>Voice conversation during onboarding, if you choose it</td><td>Your voice and what you say during that conversation. What ElevenLabs keeps is governed by its own privacy policy.</td></tr>
             <tr><td><strong>Apple Sign-In</strong></td><td>Account authentication (iOS)</td><td>Apple-provided identity token and email</td></tr>
             <tr><td><strong>OpenWeatherMap</strong></td><td>Weather forecasts for notifications</td><td>Timezone-derived general location only</td></tr>
             <tr><td><strong>Instacart Developer Platform</strong></td><td>Grocery shopping list sync</td><td>Shopping list items (ingredient names, quantities)</td></tr>
@@ -168,10 +189,18 @@
       <h2>4. Email Processing &amp; Security</h2>
       <p>Larkin processes your emails through a multi-layer security pipeline:</p>
       <ol>
-        <li><strong>Sanitization</strong> — Before any AI processing, emails are scanned and cleaned: sensitive data patterns (SSNs, credit card numbers, passwords, API keys) are automatically redacted, protected health information (PHI) is detected and flagged, content is truncated to prevent abuse, and email spoofing is detected.</li>
+        <li>
+          <strong>Sanitization</strong> — Before any AI processing, emails are scanned and cleaned:
+          <ul>
+            <li>Sensitive data patterns (SSNs, credit card numbers, passwords, API keys) are automatically redacted</li>
+            <li>Health details are detected. For health-related email, Larkin keeps only appointment logistics (see Section 1c)</li>
+            <li>Content is truncated to prevent abuse</li>
+            <li>Email spoofing is detected</li>
+          </ul>
+        </li>
         <li><strong>AI Parsing</strong> — Sanitized email content is sent to Google Gemini AI to extract event details (what, when, where, who). The AI returns structured event data only.</li>
         <li><strong>Validation</strong> — AI output is validated for correct structure and checked for any sensitive data leakage before storage.</li>
-        <li><strong>Storage</strong> — Only the extracted event metadata is stored. The original email body is never written to our database.</li>
+        <li><strong>Storage</strong> — We store the extracted event details and a short, cleaned copy of the email's text for 90 days (none for health-related email). Email waiting to be processed is held for a limited time, as described in Section 1c.</li>
       </ol>
       <p>Your Google OAuth tokens (used to access Gmail, Calendar, and Drive) are <strong>encrypted at rest</strong> and stored server-side only. They are never exposed to the client app or any third party.</p>
 
@@ -179,16 +208,18 @@
       <div class="legal-table-wrapper">
         <table>
           <thead>
-            <tr><th>Data Type</th><th>Retention Period</th><th>Deletion Method</th></tr>
+            <tr><th scope="col">Data Type</th><th scope="col">Retention Period</th><th scope="col">Deletion Method</th></tr>
           </thead>
           <tbody>
             <tr><td>Account &amp; profile</td><td>Until you delete your account</td><td>Account deletion</td></tr>
             <tr><td>Family information</td><td>Until you delete your account</td><td>Account deletion</td></tr>
             <tr><td>Parsed events</td><td>Until you delete your account</td><td>Account deletion</td></tr>
-            <tr><td>Email metadata</td><td><strong>90 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
+            <tr><td>Health appointment logistics</td><td>Until you delete your account (removing an appointment from your Google Calendar marks Larkin's copy cancelled)</td><td>Account deletion, or a deletion request to privacy@heylarkin.com</td></tr>
+            <tr><td>Email details and the short cleaned copy of email text</td><td><strong>90 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
+            <tr><td>Email waiting to be processed (full text)</td><td>Up to <strong>7 days</strong> while waiting, then up to <strong>7 days</strong> after it is sent for processing</td><td>Automatic</td></tr>
             <tr><td>Parsing error logs</td><td><strong>30 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
             <tr><td>Notification history</td><td><strong>90 days</strong></td><td>Automatic (Firestore TTL)</td></tr>
-            <tr><td>OAuth tokens</td><td>Until you disconnect or delete your account</td><td>Account deletion or revocation</td></tr>
+            <tr><td>OAuth tokens</td><td>Until you disconnect Gmail/Calendar or delete your account</td><td>Account deletion or revocation</td></tr>
             <tr><td>Notification preferences</td><td>Until you delete your account</td><td>Account deletion</td></tr>
             <tr><td>Document Vault files</td><td>Until you delete from your Google Drive or delete your account</td><td>Manual deletion or account deletion</td></tr>
             <tr><td>Crash reports</td><td><strong>90 days</strong></td><td>Automatic (Firebase Crashlytics retention)</td></tr>
@@ -220,7 +251,7 @@
       <p>You can enable or disable specific notification types, set quiet hours, and adjust notification preferences at any time in the app settings.</p>
 
       <h3>Revoke Google Access</h3>
-      <p>You can disconnect Gmail, Google Calendar, and/or Google Drive access at any time through the app or through your Google Account permissions. Revoking access stops all email, calendar, and document processing immediately. Any events already created on your Google Calendar will remain (Google Calendar is your data), but no new events will be added.</p>
+      <p>You can disconnect Gmail, Google Calendar, and/or Google Drive access at any time through the app or through your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Revoking access stops all email, calendar, and document processing immediately. Any events already created on your Google Calendar will remain (Google Calendar is your data), but no new events will be added.</p>
 
       <h2>7. Data Security</h2>
       <ul>
@@ -230,7 +261,7 @@
         <li><strong>Firebase App Check</strong> is enforced to prevent unauthorized API access</li>
         <li><strong>Firestore Security Rules</strong> restrict data access — users can only read and modify their own data</li>
         <li>Server-side fields (tokens, subscription status, sync timestamps) cannot be modified by the client app</li>
-        <li>Children's names are encrypted in storage</li>
+        <li>All data, including children's names, is stored in Google Cloud Firestore, which encrypts it at rest</li>
         <li>Document Vault files are stored in the user's own Google Drive, protected by Google's security infrastructure</li>
       </ul>
 
@@ -238,18 +269,21 @@
       <p>Larkin is designed for <strong>parents</strong> — not children. Children do not create accounts, sign in, or interact with the app directly. All data is managed under the parent's authenticated account.</p>
       <p><strong>What we collect about children:</strong></p>
       <ul>
-        <li>Name and grade level only (provided by the parent during optional onboarding)</li>
-        <li>No date of birth, email address, phone number, photo, or other personal identifiers</li>
+        <li>Names, grade levels, schools, and birthdays that the parent provides</li>
+        <li>Activities and appointments found in the parent's email and calendar</li>
+        <li>For health appointments, logistics only (see Section 1c) — never diagnoses, results, medications, or the reason for a visit</li>
+        <li>No email address, phone number, or photo</li>
       </ul>
       <p><strong>How children's data is used:</strong></p>
       <ul>
-        <li>Solely to help Larkin's AI correctly identify which child an email event is about</li>
+        <li>To help Larkin's AI correctly identify which child an email event is about (e.g., "Soccer practice" -&gt; assigned to the correct child)</li>
+        <li>To remind the parent about the child's schedule, appointments, and upcoming birthdays</li>
       </ul>
       <p><strong>How children's data is protected:</strong></p>
       <ul>
         <li>Stored under the parent's account, accessible only to the parent</li>
-        <li>Children's names are encrypted at rest</li>
-        <li>Never shared with third parties for any purpose beyond event parsing</li>
+        <li>All data, including children's names, is stored in Google Cloud Firestore, which encrypts it at rest</li>
+        <li>Never shared with third parties, except the service providers listed in Section 3, and only to provide Larkin to the parent</li>
         <li>Completely deleted when the parent deletes their account</li>
       </ul>
       <p><strong>Parental controls:</strong></p>
@@ -268,7 +302,7 @@
         <li>Stack traces and error messages</li>
         <li>Device model and operating system version</li>
         <li>App version and build number</li>
-        <li>App state at the time of the crash</li>
+        <li>App state at the time of the crash (e.g., which screen was active)</li>
       </ul>
       <p>Crash data is used solely to identify and fix bugs. It does not include personal data such as your name, email, or family information. Crash data is retained for 90 days.</p>
 
@@ -286,9 +320,9 @@
       <h2>10. California Privacy Rights (CCPA)</h2>
       <p>If you are a California resident, you have the following additional rights under the California Consumer Privacy Act (CCPA):</p>
       <ul>
-        <li><strong>Right to Know</strong>: You may request details about the categories and specific pieces of personal information we have collected about you.</li>
-        <li><strong>Right to Delete</strong>: You may request that we delete all personal information we have collected about you.</li>
-        <li><strong>Right to Opt-Out of Sale</strong>: We do <strong>not</strong> sell your personal information to any third party.</li>
+        <li><strong>Right to Know</strong>: You may request details about the categories and specific pieces of personal information we have collected about you, the sources of that information, and the business purpose for collecting it.</li>
+        <li><strong>Right to Delete</strong>: You may request that we delete all personal information we have collected about you. You can exercise this right through the in-app account deletion feature.</li>
+        <li><strong>Right to Opt-Out of Sale</strong>: We do <strong>not</strong> sell your personal information to any third party. There is nothing to opt out of.</li>
         <li><strong>Right to Non-Discrimination</strong>: We will not discriminate against you for exercising any of your CCPA rights.</li>
       </ul>
       <p>To exercise your rights, use the in-app data export and account deletion features, or contact us at privacy@heylarkin.com.</p>

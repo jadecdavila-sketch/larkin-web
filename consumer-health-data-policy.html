@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumer Health Data Privacy Policy — Larkin</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+
+  <nav class="legal-nav">
+    <div class="container">
+      <a href="index.html" class="legal-nav-home">
+        <img src="larkin_logo.png" alt="Larkin" class="nav-logo">
+      </a>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container">
+      <h1>Consumer Health Data Privacy Policy</h1>
+      <p class="legal-meta">Effective Date: September 26, 2026</p>
+
+      <p>This page explains how Larkin AI, LLC ("Larkin," "we") handles <strong>consumer health data</strong> — information that relates to the health of you or your children. It adds to our main <a href="privacy-policy.html">Privacy Policy</a>. If the two ever seem to disagree about health data, this page applies.</p>
+
+      <p>Even when Larkin uses neutral words like "Appointment," the fact that a family member has an appointment with a health provider on a certain day is health data. We treat it that way.</p>
+
+      <h2>1. What health data we collect</h2>
+      <ul>
+        <li><strong>Appointment logistics from health-related email:</strong> which family member it's for, the date and time, the location (left out if the location itself names a kind of health service), simple steps such as "forms due" or "bring your insurance card," and a general kind of provider from a short fixed list (dentist, orthodontist, pediatrician, eye doctor, pharmacy, occupational therapy (OT), school nurse; everything else is just "appointment").</li>
+        <li><strong>Short "please follow up" notes:</strong> when an office writes that test results are available or asks you to call, Larkin notes that there is something to follow up on. It does not keep the result.</li>
+        <li><strong>Attachment names and types</strong> from health-related email (for example, a form's file name), so you can save the file to your Document Vault. We don't keep the file itself. A file you save to the Vault goes to your own Google Drive.</li>
+        <li><strong>A scrambled fingerprint of the sender's web address,</strong> used only to spot duplicate reminders. It can't be turned back into the address.</li>
+        <li><strong>Your family's regular care providers</strong> and roughly when you last visited, if Larkin learns them from your calendar or you tell it, so it can remind you about check-ups.</li>
+        <li><strong>Check-up reminders:</strong> which patient and which kind of check-up, when it last fired, and the date of the last confirmed visit. No email subject line is stored.</li>
+      </ul>
+      <p><strong>We never store</strong> diagnoses, test results, medication names, the reason for a visit, or the subject line or text of a health-related email.</p>
+
+      <h2>2. Why we collect it</h2>
+      <p>Only to provide what you asked Larkin for:</p>
+      <ul>
+        <li>putting appointments on your calendar and reminding you about them;</li>
+        <li>telling you when an office needs something from you (a form, a call, a pickup);</li>
+        <li>reminding you when check-ups are due.</li>
+      </ul>
+      <p>We do <strong>not</strong> use health data for advertising, and we do not sell it. We do not use it to train AI models.</p>
+
+      <h2>3. Where it comes from</h2>
+      <ul>
+        <li>Your <strong>Gmail</strong>, which you connected with read-only access.</li>
+        <li>Your <strong>Google Calendar</strong>, which you connected.</li>
+        <li><strong>What you tell us</strong> in the app or during onboarding.</li>
+      </ul>
+
+      <h2>4. Who processes it for us</h2>
+      <p>These companies process data on our behalf, only to run Larkin:</p>
+      <div class="legal-table-wrapper">
+        <table>
+          <thead>
+            <tr><th scope="col">Company</th><th scope="col">What it does for Larkin</th><th scope="col">What it sees</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Google Cloud / Firebase</strong></td><td>Stores Larkin's data; runs our servers; sends notifications</td><td>The health data listed above</td></tr>
+            <tr><td><strong>Google Gemini</strong></td><td>Reads each email once to find the appointment details</td><td>The full email, including health-related email — under Google's paid terms, which do not allow Google to train its models on this data; Google may keep requests for a limited time to detect abuse.</td></tr>
+            <tr><td><strong>Anthropic (Claude)</strong></td><td>Writes the wording of notifications, briefings and recaps</td><td>Event details (title, date, time, who it's for), family first names, and recent notification history. For health-related email, only Larkin's own template words — never the email's subject, sender, or text. Used under Anthropic's commercial terms, which do not allow Anthropic to train its models on this data.</td></tr>
+            <tr><td><strong>ElevenLabs</strong></td><td>Runs the voice conversation during onboarding, if you choose it</td><td>Your voice and what you say during that conversation, which could include health details. What ElevenLabs keeps is governed by its own privacy policy.</td></tr>
+            <tr><td><strong>Google Calendar</strong></td><td>Holds the calendar entries Larkin creates, in your own account</td><td>The neutral entry, marked private</td></tr>
+            <tr><td><strong>Google Drive</strong></td><td>Holds files you choose to save to your Document Vault, in your own account</td><td>Only files you save</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not share health data with anyone else, including advertisers or data brokers.</p>
+
+      <h2>5. How long we keep it</h2>
+      <ul>
+        <li>Appointment logistics: until you delete your account, or ask us to delete them (privacy@heylarkin.com). Removing an appointment from your Google Calendar marks Larkin's copy as cancelled; it does not delete it.</li>
+        <li>Email details: 90 days, then deleted automatically.</li>
+        <li>Email waiting to be processed is held for up to 7 days, then up to 7 more days after being sent for processing, then deleted automatically.</li>
+      </ul>
+
+      <h2>6. Your rights</h2>
+      <p>You can:</p>
+      <ul>
+        <li><strong>See your data:</strong> download a copy of your data from inside the app at any time.</li>
+        <li><strong>Delete your data:</strong> delete your account and everything with it from inside the app, or email <strong>privacy@heylarkin.com</strong> to delete specific records. Deleting your account removes your health data from our systems. Calendar entries already on your Google Calendar stay there until you remove them, because that calendar is yours.</li>
+        <li><strong>Withdraw consent:</strong> disconnect Gmail or Google Calendar in the app or in your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Larkin stops reading new email right away.</li>
+        <li><strong>Know who we share it with:</strong> the full list is in Section 4 above.</li>
+      </ul>
+      <p>To use these rights, or if you have a question, use the in-app controls or email <strong>privacy@heylarkin.com</strong>. We will respond within 45 days. If we decline your request, you can appeal by replying to our decision; we will respond to your appeal within 45 days. If we deny your appeal, you may contact the Washington State Attorney General.</p>
+      <p>We will not treat you differently for using any of these rights.</p>
+
+      <h2>7. Changes</h2>
+      <p>If we change how we handle health data, we will update this page and tell you in the app before the change takes effect.</p>
+
+      <h2>8. Contact</h2>
+      <p><strong>Email:</strong> privacy@heylarkin.com<br>
+      <strong>Entity:</strong> Larkin AI, LLC</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="larkin_logo.png" alt="Larkin" class="footer-logo">
+      <p>&copy; 2026 Larkin AI, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
